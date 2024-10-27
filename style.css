@@ -14,6 +14,7 @@
         left: 50%;
     }
     .box2{
+        display: block;
         position: absolute;
         width: 50%;
         height: 100%;
@@ -114,6 +115,9 @@
     }
   }
 @media only screen and (max-width: 1300px) {
+    body{
+        background-color: blue;
+    }
     .page{
         display: flex;
         align-items: center;
@@ -130,8 +134,15 @@
         left: 0;
         right: 0;
     }
+    .box2{
+        display: none;
+        position: absolute;
+        width: 50%;
+        height: 100%;
+        background: url();
+        right: 50%;
+    }
     .login-panel{
-        position: relative;
         display: block;
         padding: 20px;
         font-family: DM Sans;
@@ -150,6 +161,7 @@
         bottom: 0;
         left: 0; 
         right: 0; 
+        z-index: 1;
     }
     .noacc2{
         position: absolute;
@@ -159,6 +171,7 @@
         bottom: 0;
         left: 0; 
         right: 0; 
+        z-index: 1;
     }
     .noacc:active{
         color: gray;
@@ -180,6 +193,7 @@
     .login{
         all: unset;
         border-radius: 10px;
+        z-index: 1;
         height: 50px;
         width: 55%;
         background-color: white;
@@ -195,6 +209,7 @@
         background-color: white;
         width: 30%;
         height: 50px;
+        z-index: 1;
         text-align: center;
         border-radius: 10px;
     }
@@ -206,6 +221,7 @@
         text-align: center;
         border-radius: 10px;
         cursor: pointer;
+        z-index: 1;
         transition: 0.5s;
     }
     .showpassword:active{
@@ -213,7 +229,6 @@
         color: white;
     }
     .sign-up-panel{
-        position: relative;
         display: none;
         padding: 20px;
         font-family: DM Sans;
@@ -241,7 +256,6 @@
         right: 0;
     }
     .login-panel{
-        position: relative;
         display: block;
         padding: 20px;
         font-family: DM Sans;
