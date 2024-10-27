@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="page">
+        <div class="box">
+            <div class="login-panel" id="loginpanel">
+                <h1 style="text-align: center;">Sign In / Sign Up</h1>
+                <div class="login-form" action="">
+                    <input class="login" placeholder="Email" type="email" id="email" required>
+                    <input class="login" placeholder="Password" type="password" required id="pass">
+                    <button class="login-button" onclick="login()">Sign In</button>
+                </div>
+                <div class="another">
+                    <button onclick="showpassword()" id="ps" class="showpassword">Show</button>
+                    <p style="text-decoration: underline; cursor: pointer;">Forgot Password?</p>
+                </div>
+                <h2 class="noacc" onclick="tosignup()">Dont have account? Sign Up Now</h2>
+            </div>
+            <div class="sign-up-panel" id="signuppanel">
+                <h1 style="text-align: center;">Sign In / Sign Up</h1>
+                <div class="login-form" action="">
+                    <input class="login" placeholder="Email" type="email" id="semail" required>
+                    <input class="login" placeholder="Password" type="password" required id="spass">
+                    <input class="login" placeholder="Re enter password" type="password" required id="respass" oninput="checkforrepass()">
+                    <button class="login-button" onclick="signup()">Sign Up</button>
+                </div>
+                <div class="another">
+                    <button onclick="showpasswordsu()" id="ps2" class="showpassword">Show</button>
+                </div>
+                <h2 class="noacc2" onclick="tosignin()">Already have an account? Sign In Now</h2>
+            </div>
+        </div>
+        <div class="box2">
+
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+
+</html>
